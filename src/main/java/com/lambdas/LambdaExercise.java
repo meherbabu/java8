@@ -1,8 +1,9 @@
-package com.optum;
+package com.lambdas;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class LambdaExercise {
@@ -14,25 +15,18 @@ public class LambdaExercise {
 
 		Collections.sort(list, (o1, o2) -> o1.getLname().compareTo(o2.getLname()));
 
-		printConditionally(list, p -> true);
+		printConditionally(list, p -> true, p -> System.out.println(p));
 
-		printConditionally(list, p -> p.getFname().startsWith("m"));
+		printConditionally(list, p -> p.getFname().startsWith("m"), p -> System.out.println(p));
 
 	}
 
-	private static void printConditionally(List<Person> list, Predicate<Person> f) {
-		for (Person p : list) {
-			if (f.test(p)) {
-				System.out.println(p);
-			}
-		}
-
+	private static void printConditionally(List<Person> list, Predicate<Person> f, Consumer<Person> c) {
 		list.forEach(p -> {
 			if (f.test(p)) {
-				System.out.println(p);
+				c.accept(p);
 			}
 		});
-
 	}
 }
 

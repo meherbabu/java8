@@ -1,4 +1,4 @@
-package com.optum;
+package com.lambdas;
 
 public class LambdaExpn {
 	public static void main(String[] args) {
