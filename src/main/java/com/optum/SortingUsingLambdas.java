@@ -1,4 +1,4 @@
-// This class sorts a collection of elements using Lambda Expressions.
+// This class sorts a collection of elements using Lambda Expressions and also uses the default Predicate Functional interface provided in Java
 
 package com.optum;
 
