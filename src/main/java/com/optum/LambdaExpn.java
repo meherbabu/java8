@@ -1,3 +1,5 @@
+// This class provides a new custom Functional interface and a lambda expression using that interface
+
 package com.optum;
 
 public class LambdaExpn {
