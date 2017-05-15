@@ -1,3 +1,5 @@
+// This class sorts a collection of elements using Lambda Expressions.
+
 package com.optum;
 
 import java.util.Arrays;
@@ -5,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class LambdaExercise {
+public class SortingUsingLambdas {
 
 	public static void main(String[] args) {
 
