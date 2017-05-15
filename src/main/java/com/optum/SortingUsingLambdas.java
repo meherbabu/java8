@@ -1,4 +1,6 @@
-package com.lambdas;
+// This class sorts a collection of elements using Lambda Expressions and also uses the default Predicate Functional interface provided in Java
+
+package com.optum;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -6,12 +8,14 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-public class LambdaExercise {
+import com.lambdas.Person;
+
+public class SortingUsingLambdas {
 
 	public static void main(String[] args) {
 
-		List<Person> list = Arrays.asList(new Person(1, "meher", "kotha"), new Person(2, "lucky", "babu"),
-				new Person(3, "manju", "gudisa"));
+		List<Person> list = Arrays.asList(new Person(1, "john", "kite"), new Person(2, "kite", "john"),
+				new Person(3, "jane", "doe"));
 
 		Collections.sort(list, (o1, o2) -> o1.getLname().compareTo(o2.getLname()));
 
@@ -30,6 +34,6 @@ public class LambdaExercise {
 	}
 }
 
-/*interface Condition {
-	boolean test(Person p);
-}*/
+/*
+ * interface Condition { boolean test(Person p); }
+ */
