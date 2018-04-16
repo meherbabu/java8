@@ -8,7 +8,7 @@ public class MethodReference {
 
 	public static void main(String[] args) {
 
-		String[] arr = { "abcd", "1234", "meher" };
+		String[] arr = { "abcd", "1234", "john" };
 		// printConditionally(arr, i -> System.out.println(i));
 
 		// printConditionally(arr, System.out::println);
