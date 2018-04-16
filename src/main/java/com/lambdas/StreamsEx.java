@@ -7,8 +7,8 @@ public class StreamsEx {
 
 	public static void main(String[] args) {
 
-		List<Person> list = Arrays.asList(new Person(1, "meher", "kotha"), new Person(2, "lucky", "babu"),
-				new Person(3, "manju", "gudisa"));
+		List<Person> list = Arrays.asList(new Person(1, "john1", "1111"), new Person(2, "john2", "2222"),
+				new Person(3, "john3", "3333"));
 
 		// From JDK 1.8
 		list.stream().filter(p -> p.getFname().startsWith("m")).forEach(System.out::println);
