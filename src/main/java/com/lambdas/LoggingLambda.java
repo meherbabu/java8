@@ -29,7 +29,7 @@ public class LoggingLambda {
 
 	private static String getString() {
 		System.out.println("hello.......");
-		return "hi meher";
+		return "hi john";
 	}
 
 }
